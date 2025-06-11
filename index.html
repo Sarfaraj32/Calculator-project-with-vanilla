@@ -7,6 +7,35 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <div class="calculator">
+      <div class="display" id="display">0</div>
+      <div class="buttons">
+        <button class="btn function" onclick="clearDisplay()">AC</button>
+        <button class="btn function" onclick="toggleSign()">±</button>
+        <button class="btn function" onclick="percent()">%</button>
+        <button class="btn operator" onclick="appendOperator('/')">÷</button>
+
+        <button class="btn number" onclick="appendNumber('7')">7</button>
+        <button class="btn number" onclick="appendNumber('8')">8</button>
+        <button class="btn number" onclick="appendNumber('9')">9</button>
+        <button class="btn operator" onclick="appendOperator('*')">×</button>
+
+        <button class="btn number" onclick="appendNumber('4')">4</button>
+        <button class="btn number" onclick="appendNumber('5')">5</button>
+        <button class="btn number" onclick="appendNumber('6')">6</button>
+        <button class="btn operator" onclick="appendOperator('-')">−</button>
+
+        <button class="btn number" onclick="appendNumber('1')">1</button>
+        <button class="btn number" onclick="appendNumber('2')">2</button>
+        <button class="btn number" onclick="appendNumber('3')">3</button>
+        <button class="btn operator" onclick="appendOperator('+')">+</button>
+
+        <button class="btn number zero" onclick="appendNumber('0')">0</button>
+        <button class="btn number" onclick="appendNumber('.')">.</button>
+        <button class="btn equal" onclick="calculate()">=</button>
+      </div>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>
