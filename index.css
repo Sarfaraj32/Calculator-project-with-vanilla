@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  width: 320px;
+  background-color: #000;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 0 20px #333;
+}
+
+.display {
+  background-color: #000;
+  color: #fff;
+  font-size: 3rem;
+  text-align: right;
+  padding: 20px 10px;
+  border-radius: 10px;
+  min-height: 60px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 20px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn.function {
+  background-color: #a5a5a5;
+  color: black;
+}
+
+.btn.operator {
+  background-color: #ff9f0a;
+  color: white;
+}
+
+.btn.number {
+  background-color: #333;
+  color: white;
+}
+
+.btn.equal {
+  background-color: #ff9f0a;
+  color: white;
+}
+
+.btn.zero {
+  grid-column: span 2;
+  border-radius: 50px;
+  text-align: left;
+  padding-left: 35px;
+}
